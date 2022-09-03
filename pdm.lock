@@ -45,6 +45,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "pli"
+version = "0.0.1+d20220903"
+requires_python = ">=3.9"
+editable = true
+path = "./."
+summary = "Ping's Development Toolkit"
+dependencies = [
+    "typer[all]>=0.6.1",
+]
+
+[[package]]
 name = "pluggy"
 version = "1.0.0"
 requires_python = ">=3.6"
@@ -130,7 +141,7 @@ dependencies = [
 
 [metadata]
 lock_version = "4.0"
-content_hash = "sha256:0bc27430a1ca6ba5455c2becc201c01c680c7d585bfb71a743f38544b375e492"
+content_hash = "sha256:bfdc2acd4660f0e0159260c8420464f57e902e1cadd7487753f3c4e8bc60da68"
 
 [metadata.files]
 "atomicwrites 1.4.1" = [

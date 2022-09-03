@@ -1,14 +1,13 @@
 import typer
 import os
 from pathlib import Path
-from typing import Optional
 
 app = typer.Typer()
 
 
 @app.command()
 def init_python(
-    location: Optional[Path] = typer.Option(
+    location: Path = typer.Option(
         ".",
         "--location",
         "-l",
@@ -16,6 +15,7 @@ def init_python(
     )
 ):
 
+    # files to create in python project
     files = (
         "__init__.py",
         ".gitignore",

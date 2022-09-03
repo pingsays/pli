@@ -1,6 +1,5 @@
 import typer
 import os
-from typing import Optional
 from pathlib import Path
 import python
 import pipeline
@@ -15,12 +14,12 @@ features = ("Python", "Terraform", "Pipeline")
 
 
 @app.command()
-def all(
-    value: bool = typer.Option(
-        True, "--all", help=f"Initialize a project with all features: {features}."
-    )
-):
-    pass
+def all():
+    """
+    Initialize all features when starting a project. Currently supported features are:
+    Python, Terraform, Pipeline
+    """
+    [print(f"Initializing {feature}") for feature in features]
 
 
 # def init(
