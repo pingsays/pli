@@ -10,7 +10,7 @@ license = { text = "MIT" }
 [project.optional-dependencies]
 
 [project.scripts]
-pli = "pli.__main__:app"
+pli = "pli.main:app"
 
 [build-system]
 requires = ["pdm-pep517>=1.0.0"]
@@ -24,6 +24,5 @@ package-dir = "src"
 
 [tool.pdm.dev-dependencies]
 dev = [
-    "-e file:///${PROJECT_ROOT}#egg=pli",
 ]
 test = ["pytest>=7.1.2"]
